@@ -1,0 +1,21 @@
+.parent_header{
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #073636;
+}
+.child_header{
+    width: 70vw;
+    height: 69px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child_header p{
+    font-size: 1.4em;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}

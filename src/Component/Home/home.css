@@ -1,0 +1,23 @@
+.parentHome{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+.childHome{
+    width: auto;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: 1px solid;
+    flex: 1 1 20rem;
+}
+.parent{
+    margin-top: 2em;
+}
+.listStyle{
+    list-style: none;
+}

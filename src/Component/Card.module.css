@@ -1,0 +1,142 @@
+
+
+.card {
+  width: 20rem;
+  cursor: pointer;
+}
+
+.box {
+  background: linear-gradient(to top right, #4a626e 0.3%, #1e2130 90.2%);
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease 0s;
+  border-radius: 10px;
+
+
+}
+.box:hover {
+  filter: drop-shadow(1px 1px 1px #808080);
+}
+.box:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform-origin: top right;
+  transform: scale(0);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: all 0.4s ease;
+}
+.box:hover:before {
+  transform: scale(1);
+}
+.box img {
+  width: 100%;
+ height: 240px;
+  object-fit: cover;
+  transition: all 0.4s ease;
+}
+.box:hover img {
+  opacity: 0.2;
+  
+}
+.box .box_content {
+  color: #fff;
+  opacity: 0;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  transition: all 0.4s ease;
+
+}
+.box:hover .box_content {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+.box .title {
+  font-size: 19px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  margin: 0 0 3px;
+}
+.box .post {
+  font-size: 13px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  display: block;
+}
+.box .icon {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transition: all 0.4s ease;
+  color: #fff;
+}
+.box:hover .icon {
+  transform: translateX(-50%) translateY(-50%) scale(1) rotate(360deg);
+}
+/* .box .icon li {
+  margin: 0 1px;
+  display: inline-block;
+} */
+/* .box .icon li a {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 33px;
+  height: 35px;
+  width: 35px;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  display: block;
+  transition: all 0.3s;
+}
+.box .icon li a:hover {
+  border-radius: 0 10px;
+  background: #008c8c;
+} */
+@media only screen and (max-width: 990px) {
+  .box {
+    margin: 0 0 30px;
+  }
+  .card {
+    width: 14rem;
+  
+  }
+}
+@media only screen and (max-width: 427px) {
+  .card {
+    width: 18rem;
+  
+  }
+}
+
+
+
+.title {
+  text-align: left;
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 7px;
+}
+
+.Content {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
